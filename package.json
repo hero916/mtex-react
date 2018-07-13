@@ -5,10 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "echo":"echo start eslint",
     "format": "eslint {app.js,src/*.js} --fix"
   },
   "pre-commit": [
-    "format"
+    "echo","format"
   ],
   "author": "",
   "license": "",
