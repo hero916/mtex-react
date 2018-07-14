@@ -6,11 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server",
     "echo": "echo start eslint",
+    "lint":"eslint ./ --cache --ignore-pattern .gitignore",
     "format": "eslint {app.js,src/*.js} --fix"
   },
   "pre-commit": [
     "echo",
-    "format"
+    "lint"
   ],
   "author": "",
   "license": "",
