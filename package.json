@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "echo": "echo start eslint",
     "lint":"eslint --ext .js app.js helloword.js ./src",
-    "format": "eslint --ext .js app.js helloword.js --fix"
+    "format": "eslint --ext .js app.js helloword.js ./src --fix"
   },
   "pre-commit": [
     "echo",
