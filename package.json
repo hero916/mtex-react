@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "echo": "echo start eslint",
-    "lint":"eslint ./ --cache --ignore-pattern .gitignore",
-    "format": "eslint {app.js,src/*.js} --fix"
+    "lint":"eslint --ext .js app.js helloword.js ./src",
+    "format": "eslint --ext .js app.js helloword.js --fix"
   },
   "pre-commit": [
     "echo",
@@ -37,7 +37,6 @@
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.0",
-    "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
     "file-loader": "^1.1.5",
     "less": "^2.7.3",
